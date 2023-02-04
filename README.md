@@ -13,18 +13,18 @@ To change the executable icon = Change the App Icon.ico file in the path "Config
 # Commands to build  
 To use paseos command as argument for file "Project" Ex "./Project make"  
 Make  = Debug Win32  
-run  = Debug Win32
+run  = Debug Win32  
 make-b-w32 = Debug Win32  
 make-r-w32 = Release Win32  
 make-s-w32 = Shipping Win32  
 make-b-w64 = Debug Win64  
-make-r-w64 = Release Win64
+make-r-w64 = Release Win64  
 make-s-w64 = Shipping Win64  
 
 # Macros
 DEBUG_MODE   
 RELEASE_MODE  
-SHIPPING_MODE
+SHIPPING_MODE  
 GAMENAME  
 CONTENTPATH  Full path of the "Content" folder.  
 
