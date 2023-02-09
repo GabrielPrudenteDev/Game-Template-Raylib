@@ -3,8 +3,8 @@ Vs2019Path = "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\
 Vs2022Path = "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\VsDevCmd"
 
 SettingsString = [[@echo off
-If "%~1" == "run" GOTO RunDebugWin32
-IF "%~1" == "make" GOTO MakeDebugWin32
+If "%~1" == "run" GOTO RunDebugWin64
+IF "%~1" == "make" GOTO MakeDebugWin64
 IF "%~1" == "make-d-w32" GOTO MakeDebugWin32
 IF "%~1" == "make-d-w64" GOTO MakeDebugWin64
 IF "%~1" == "make-r-w32" GOTO MakeReleaseWin32
@@ -20,9 +20,9 @@ call premake5.exe VSVERSION
 cd "../../"
 GOTO Done
 
-:RunDebugWin32
-echo "Run Debug Win32"
-call "Binaries/Win32/Debug-Game/PROJECTNAME.exe"
+:RunDebugWin64
+echo "Run Debug Win64"
+call "Binaries/Win64/Debug-Game/PROJECTNAME.exe"
 GOTO Done
 
 :MakeDebugWin32
